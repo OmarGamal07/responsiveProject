@@ -60,7 +60,26 @@
 .defintionCategoryimg:hover{
     border-radius: 100%;
 }
+.testimonial-content{
+  color: white;
+  padding: 30px;
+  overflow: hidden;
+  font-style: italic;
+}
+.name{
+  color: #198754;
+  font-weight: bold;
+  font-size: 20px;
+}
+.says1{
+  background-color: rgba(119, 123, 120, 0.128);
+  font-weight: 600;
+  border-radius: 10px;
+}
+#recent:after{
+  content: " News";
+  color: #198754;
+  font-weight: 500;
+  font-size: 32px;
 
-
-
- 
+}
