@@ -6,171 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="homepage.css">
     <title>Pharmacy</title>
 </head>
 <body>
-    <header id="header"  class="sticky-top bg-light" >
-        
-       
-        <nav class="navbar navbar-expand-sm  navbar-light ">
-            <div class="container-fluid">
-              <a class="navbar-brand ms-5" href="#" ><img src="./img/logo.png" alt="" class="col-12  "width="100" height="40"></a>
-              <div class=" d-flex justify-content-start flex-wrap" id="navbarSupportedContent">
-                <form class="d-flex me-5" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                  <button   onclick="opennav()"   id ="bar"class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <ul class="navbar-nav me-5 mb-2 mb-lg-0 collapse navbar-collapse" id="navbarToggler">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Home
-                    </a>
-                    
-                    <ul class="dropdown-menu ">
-                      <li><a class="dropdown-item" href="#">Category</a></li>
-                      <li><a class="dropdown-item" href="#">Makeup</a></li>
-                      <li><a class="dropdown-item" href="#">Favourit</a></li>
-                      <li><a class="dropdown-item" href="#">AboutUs</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Department
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">vetamin A</a></li>
-                      <li><a class="dropdown-item" href="#">vetamin B</a></li>
-                      <li><a class="dropdown-item" href="#">vetamin C</a></li>
-                      <li><a class="dropdown-item" href="#">vetamin D</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Doctors
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">omar Gamal</a></li>
-                      <li><a class="dropdown-item" href="#">Mohamed Sabry</a></li>
-                      <li><a class="dropdown-item" href="#">Mohamed Ahmed</a></li>
-                      <li><a class="dropdown-item" href="#">Mahmud Hassan</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                
-              </div>
+   
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://themeht.com/template/hectolab/html/ltr/images/logo.png" style="width: 180px; height: 50px;" alt="brand">
+          </a>
+          <button class="navbar-toggler" type="button"
+           data-bs-toggle="collapse"
+           data-bs-target="#nav" 
+           aria-controls="nav" 
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+           <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse bg-white p-2 rounded" id="nav">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active"href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Blogs</a>
+              </li>
+            </ul>
+            <div class="search ps-3 pe-3 d-none d-lg-block">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-          </nav>
-
-          
-         <div id="menu" class="container-fluid d-flex flex-column align-items-end "  style=" background-color: antiquewhite; border: 1px black solid;">
-            <button  id="closebtn" onclick="closeNav()" style="display: none;">×</button>
-            <div  id="accordion"  >
-            
-                <div  class="card menucard " data-bs-toggle="collapse" href="#collapseOne" id="toggleone">
-                  <div class="card-header">
-                    <a class="btn" style="width: 15vw;">
-                      Home
-                    </a>
-                  </div>
-                  <div id="collapseOne" class="collapse " data-bs-parent="#accordion">
-                    <div class="card-body">
-                        <a href="#">Category</a><br>
-                        <a href="#">Makeup</a><br>
-                        <a href="#">Favourit</a><br>
-                        <a href="#">AboutUs</a><br>
-    
-                        <a href="#"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card menucard" data-bs-toggle="collapse" href="#collapseTwo" id="toggletwo">
-                  <div class="card-header">
-                    <a class="collapsed btn"  style="width: 15vw;">
-                    Department
-                  </a>
-                  </div>
-                  <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-                    <div class="card-body">
-                        <a href="#">vetamin A</a><br>
-                        <a href="#">vetamin B</a><br>
-                        <a href="#">vetamin C</a><br>
-                        <a href="#">vetamin D</a><br>
-                    </div>
-                  </div>
-                </div>
-                <div class="card menucard" data-bs-toggle="collapse" href="#collapseThree" id="togglethree">
-                  <div class="card-header">
-                    <a class="collapsed btn"  style="width: 15vw;" >
-                      Doctors
-                    </a>
-                  </div>
-                  <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-                    <div class="card-body">
-                        <a href="#">Omar Gamal</a><br>
-                        <a href="#">Mohamed Sabry</a><br>
-                        <a href="#">Mohamed Ahmed</a><br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-         </div>
-    </header>
+              <div class="login d-none d-lg-block text-">
+                <a class="nav-link " href="#">Login</a>
+                <a class="nav-link " href="#">Register</a>
+            </div>
+      </nav>
+</header>
 
     <main>
-        
-        <section id="register" >
-            <div class="card img-fluid" style="width:100%">
-                <img class="card-img-top " height="480px"  src="/img/pharmacy.jfif" alt="Card image" >
-                <div class="card-img-overlay mt-5 .container-md">
-                 
-                    <!-- <form action="#" style="background-color:white; width: 50%;height: 90%" >
-                       
-                        <div class="ms-5 mt-2">
-                            <label for="name" class="form-label mt-3">Name:</label>
-                            <input type="text" class="form-control formLogin"  id="name" placeholder="Enter name" name="name">
-                              
-                          </div>
-                        <div class="ms-5 mt-2">
-                          <label for="email" class="form-label mt-3">Email:</label>
-                          <input type="email" class="form-control formLogin"  id="email" placeholder="Enter email" name="email">
-                            
-                        </div>
-                        <div class="ms-5">
-                          <label for="pwd" class="form-label">Password:</label>
-                          <input type="password" class="form-control formLogin" id="pwd"  placeholder="Enter password" name="pswd">
-                        </div>
-                        <div class="form-check ms-5">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                          </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary ms-5">Submit</button>
-                      </form> -->
-                      <form style="background-color:white; width: 50%;height: 90%">
-                        <div class="mt-5 ms-5 mb-3">
-                          <h2 class="d-sm-flex justify-content-sm-center">Appointment  <div class=" text-success">  Now! </div></h2>>
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="ms-5 mb-2">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 ms-5 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                       <div class="d-sm-flex justify-content-sm-center"> <button type="submit" class="btn btn-primary ">Submit</button></div>
-                      </form>
-                </div>
-              </div>
-        </section>
-
+      <section id="register"  >
+        <div class="card img-fluid ">
+            <img class="card-img-top"  height="650px"  src="/img/pharmacy.jfif" alt="Card image" >
+            <div class="card-img-overlay mt-5 container-md">
+             <form style="background-color:white; width: 50%;" class=""> 
+                    <div class="mt-5 ms-sm-5 mb-3 ">
+                      <h2 class="d-sm-flex justify-content-sm-center">Appointment  <div class=" text-success">  Now! </div></h2>>
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="ms-5 mb-2">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 ms-5 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                   <div class="d-sm-flex justify-content-sm-center"> <button type="submit" class="btn btn-primary ">Submit</button></div>
+                  </form>
+            </div>
+          </div>
+    </section>
+        <section  id="number" class="m-5 d-flex justify-content-between flex-wrap">
+          <div id="ourService" class="m-5">
+            <h3 id="numberourService"class="ms-5">0</h3>
+            <h6 class="ms-5">OUR SERVICES</h6>
+          </div>
+          <div id="ourService" class="m-5">
+            <h3 id="numberourSUCCESS"class="ms-5">0</h3>
+            <h6 class="ms-5">SUCCESS CASES</h6>
+          </div>
+          <div id="ourService" class="m-5">
+            <h3 id="numberourDOCTORS"class="ms-5">0</h3>
+            <h6 class="ms-5">OUR DOCTORS</h6>
+          </div>
+          <div id="ourService" class="m-5">
+            <h3 id="numberourPATIENTS"class="ms-5">0</h3>
+            <h6 class="ms-5">HAPPY PATIENTS</h6>
+          </div>
+        </section >
 
         <section id="defintionCategory" class="mt-5 p-5 ">
             <div class="container-fluid">
@@ -322,44 +245,46 @@
       </section>
       
 
-      <section id="service" class="  ">
-        <h2 class="d-flex justify-content-center">We Provide   <div class=" text-success"> Service </div></h2>
-        <p class="d-flex justify-content-center">Hectolab Provide Greate Services Exerci tation ullamcorper suscipitorens lobortis nisl ut aliquip ex ea commodo, Exerci tation ullamcorper suscipitorens Ut elit tellus.</p>>
+      <section id="service">
+        <h2 class="d-flex justify-content-center">We Provide <div class=" text-success"> Service </div></h2>
+        <div class="containter text-center">
+          <p class="d-flex justify-content-center ms-5 me-5">Hectolab Provide Greate Services Exerci tation ullamcorper suscipitorens lobortis nisl ut aliquip ex ea commodo, Exerci tation ullamcorper suscipitorens Ut elit tellus.</p>>
+        </div>
        <div class="d-flex justify-content-center">
-        <div id="demo" class="carousel slide " data-bs-ride="carousel">
+        <div id="servicecarousel" class="carousel slide w-50 " data-bs-ride="carousel">
 
           <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <div class="">
+            <button type="button" data-bs-target="#servicecarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#servicecarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#servicecarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
-            <div class="card carousel-item active" style="width:400px">
-              <img src="/img/cardiology.jpg" alt="Los Angeles" class="d-block w-100">
+            <div class="card carousel-item active w-100 h-50 mw-100">
+                <img src="/img/cardiology.jpg" alt="Los Angeles" class="d-block w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">Cardiology Depertment</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
               </div>
             </div>
-            <div class="card carousel-item " style="width:400px">
-              <img src="/img/dental.jpg" alt="Chicago" class="d-block w-100">
+            <div class="card carousel-item w-100 h-50 mw-100">
+              <img src="/img/dental.jpg" alt="Chicago" class="w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">Dental Depertment</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
               </div>
             </div>
-            <div class="card carousel-item " style="width:400px">
-              <img src="/img/diagnotic.jpg" alt="New York" class="d-block w-100">
+            <div class="card carousel-item w-100 h-50 mw-100" >
+              <img src="/img/diagnotic.jpg" alt="New York" class="w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">Diagnostic Depertment</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
               </div>
             </div>
-            <div class="card carousel-item " style="width:400px">
-              <img src="/img/neurology.jpg" alt="New York" class="d-block w-100">
+            <div class="card carousel-item w-100 h-50 mw-100">
+              <img src="/img/neurology.jpg" alt="New York" class="w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">neurology Depertment</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
@@ -370,10 +295,10 @@
           </div>
         
           <!-- Left and right controls/icons -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#servicecarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#servicecarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
@@ -381,52 +306,62 @@
         <!-- Carousel -->
 
       </section>
-         
-
 
       <section id="team" class="mt-5">
-        <h2 class="d-flex justify-content-center">Meet Our   <div class=" text-success"> Doctors </div></h2>
-        <p class="d-flex justify-content-center">Hectolab Provide Greate Services Exerci tation ullamcorper suscipitorens lobortis nisl ut aliquip ex ea commodo, Exerci tation ullamcorper suscipitorens Ut elit tellus.</p>>
+        <h2 class="d-flex justify-content-center">Meet Our<div class=" text-success"> Doctors </div></h2>
+        <div class="containter text-center">
+          <p class="d-flex justify-content-center ms-5 me-5">Hectolab Provide Greate Services Exerci tation ullamcorper suscipitorens lobortis nisl ut aliquip ex ea commodo, Exerci tation ullamcorper suscipitorens Ut elit tellus.</p>
+
+        </div>
        <div class="d-flex justify-content-center">
-        <div id="demo" class="carousel slide " data-bs-ride="carousel">
+        <div id="servicecarousel2" class="carousel slide w-50 " data-bs-ride="carousel">
 
           <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <div class="">
+            <button type="button" data-bs-target="#servicecarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#servicecarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#servicecarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         
           <!-- The slideshow/carousel -->
-          <div class="carousel-inner container mt-3">
-            <div class="card carousel-item active" style="width:400px">
-              <img src="/img/romai.jpg" alt="" class="d-block w-100">
+          <div class="carousel-inner mt-5">
+            <div class="card carousel-item active w-100 h-50 mw-100">
+                <img src="/img/cardiology.jpg" alt="Los Angeles" class="d-block w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">Dr. Romi Keely</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
               </div>
             </div>
-            <div class="card carousel-item " style="width:400px">
-              <img src="/img/john.jpg" alt="" class="d-block w-100">
+            <div class="card carousel-item w-100 h-50 mw-100">
+              <img src="/img/dental.jpg" alt="Chicago" class="w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">Dr. Jhon Maxwell</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
               </div>
             </div>
-            <div class="card carousel-item " style="width:400px">
-              <img src="/img/mathew.jpg" alt="Los Angeles" class="d-block w-100">
+            <div class="card carousel-item w-100 h-50 mw-100" >
+              <img src="/img/diagnotic.jpg" alt="New York" class="w-100">
+              <div class="card-body">
+                <h2 class="d-flex justify-content-center">Diagnostic Depertment</h2>
+                <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
+              </div>
+            </div>
+            <div class="card carousel-item w-100 h-50 mw-100">
+              <img src="/img/neurology.jpg" alt="New York" class="w-100">
               <div class="card-body">
                 <h2 class="d-flex justify-content-center">Dr. Mathew Doe</h2>
                 <p  >llamcorper suscipit lobortis nisl ut aliquip ex ea commodo non habent claritatem insitamconsequat duis </p>
               </div>
             </div>
+           
+            
           </div>
         
           <!-- Left and right controls/icons -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#servicecarousel2" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#servicecarousel2" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
@@ -436,14 +371,17 @@
       </section>
 
 
-<<<<<<< HEAD
+      
+
+
+
       <!--What clients says-->
       <div
         class="bg-image mt-5"
           style="background-image: url('https://themeht.com/template/hectolab/html/ltr/images/bg/05.jpg');
           background-position: 50% 50%;
           background-size: cover;
-          height: 100vh;">
+          height: auto;">
 
           <div class="mask d-flex flex flex-column justify-content-center align-items-center text-center top-0 end-0 bottom-0 start-0 h-100 text-white" style="background-color: hsla(0, 0%, 0%, 0.9)">
               <div class="d-flex flex flex-column justify-content-center align-items-center text-center ">
@@ -456,11 +394,11 @@
                 <div class="col-12 p-3">
                   <div class="row">
                     
-                    <div class="col-lg-6  mt-lg-0">
+                    <div class="col-lg-6 mt-lg-0">
                       <div class="d-flex says1 justify-content-start mw-100 mh-100 ">
                           <div class="row">
                             <div class="col-4">
-                              <img src="img/01.jpg" class="rounded h-100 w-100" alt="#">
+                              <img src="img/01.jpg" class="rounded mh-100 mw-100" alt="#">
                             </div>
                             <div class="col-8">
                               <p class="testimonial-content">
@@ -482,7 +420,7 @@
                       <div id="say2" class="d-flex says1 justify-content-start mw-100 mh-100 ">
                           <div class="row">
                             <div class="col-4">
-                              <img src="img/02.jpg" class="rounded h-100 w-100" alt="">
+                              <img src="img/02.jpg" class="rounded mh-100 mw-100" alt="">
                             </div>
                             <div class="col-8">
                               <p class="testimonial-content">
@@ -514,7 +452,7 @@
         <!--End what clients says-->
 
         <section class="recentnews mt-5">
-            <div class="d-flex flex flex-column justify-content-center align-items-center text-center ">
+            <div class="d-flex flex flex-nowrap flex-column justify-content-center align-items-center text-center ">
               <h5><span class="text-success d-inline">___</span> Blog</h5>
               <h1 id="recent" class="h1">Recent</h1>
               <p class="col-7">Hectolab Provide Greate Services Exerci tation ullamcorper suscipitorens lobortis nisl ut aliquip ex ea commodo, Exerci tation ullamcorper suscipitorens Ut elit tellus.
@@ -522,7 +460,7 @@
             </div>
             
             <div class="container d-none d-md-block fs-6 ">
-              <div class="row d-flex justify-content-center p-5 row-cols-3">
+              <div class="row d-flex justify-content-center p-5">
                 <div class="col-lg-5 col-md-12 bg-dark text-light rounded m-3 p-5">
                   <h4>23,APRIL,2019</h4>
                   <h3>Hectolab Provide Greate Services Exerci tation ullamcorper</h3>
@@ -585,41 +523,76 @@
                   </div>              
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              
             </div>
-        </section>
-
-
-
-            
-=======
-      <section  id="number" class="m-5 d-flex justify-content-between">
-        <div id="ourService" class="m-5">
-          <h3 id="numberourService"class="ms-5">0</h3>
-          <h6 class="ms-5">OUR SERVICES</h6>
-        </div>
-        <div id="ourService" class="m-5">
-          <h3 id="numberourSUCCESS"class="ms-5">0</h3>
-          <h6 class="ms-5">SUCCESS CASES</h6>
-        </div>
-        <div id="ourService" class="m-5">
-          <h3 id="numberourDOCTORS"class="ms-5">0</h3>
-          <h6 class="ms-5">OUR DOCTORS</h6>
-        </div>
-        <div id="ourService" class="m-5">
-          <h3 id="numberourPATIENTS"class="ms-5">0</h3>
-          <h6 class="ms-5">HAPPY PATIENTS</h6>
-        </div>
-      </section >
->>>>>>> ec9f6596365a4e8c603e741b3fb9f794ce1a889e
+        </section>   
     </main>
+
+    <footer
+        class="bg-image mt-5"
+          style="background-image: url('https://themeht.com/template/hectolab/html/ltr/images/bg/05.jpg');
+          background-position: 50% 50%;
+          background-size: cover;
+          height: auto;
+          "
+       >
+       <div class="mask d-flex flex-column justify-content-center align-items-center text-start top-0 end-0 bottom-0 start-0 h-100 text-white" style="background-color: hsla(0, 0%, 0%, 0.8)">
+        <div class="row container p-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-logo mb-3">
+              <img id="footer-logo-white-img" class="img-fluid w-75" src="img/logo-white.png" alt="">
+            </div>
+            <p class="mb-3">Hectolab Medical and Health Ut wisi enim ad minim veniam, wisi nibh tristique risus. quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat</p> <a class="btn-simple" href="#"><span>Read More <i class="ms-2 fas fa-long-arrow-alt-right"></i></span></a>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0 footer-list ps-lg-4">
+            <h4 id="dept">OUR</h4>
+            <ul class="list-unstyled">
+              <li class="foot_link"><a href="#">Outpatient Depertment</a>
+              </li>
+              <li class="foot_link"><a  href="#">Pediatrics Depertment</a>
+              </li>
+              <li class="foot_link"><a  href="#">Neurology Depertment</a>
+              </li>
+              <li class="foot_link"><a  href="#">Dental Depertment</a>
+              </li>
+              <li class="foot_link"><a  href="#">Cardiology Depertment</a>
+              </li>
+              <li class="foot_link"><a  href="#">Diagnostic Depertment</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-5 mt-5 mt-lg-0 footer-list ps-lg-4">
+                <h4 id="link">QUICK</h4>
+                <ul class="list-unstyled">
+                  <li class="foot_link"><a  href="#">About us</a>
+                  </li>
+                  <li class="foot_link"><a  href="#">Service</a>
+                  </li>
+                  <li class="foot_link"><a href="#">Contact Us</a>
+                  </li>
+                  <li class="foot_link"><a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="foot_link"><a href="#">Terms &amp; Condition</a>
+                  </li>
+                </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                <h4 id="touch">Get IN</h4>
+                <ul class="media-icon list-unstyled">
+                  <li class="mb-4"> <i class="flaticon-paper-plane"></i>
+                    <p class="mb-0">423B, Road Wordwide Country, USA</p>
+                  </li>
+                  <li class="mb-4 foot_link"> <i class="flaticon-email"></i>
+                    <a href="mailto:themeht23@gmail.com">themeht23@gmail.com</a>
+                  </li>
+                  <li class="foot_link"> <i class="flaticon-phone-call"></i>
+                    <a href="tel:+912345678900">+91-234-567-8900</a>
+                  </li>
+                </ul>             
+          </div>
+        </div>
+        </div>
+        </footer>
 
  <script src="homepage.js"></script>   
 </body>
