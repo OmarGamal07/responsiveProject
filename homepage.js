@@ -13,3 +13,22 @@ function closeNav(){
   document.getElementById("toggletwo").style.display = "none";
   document.getElementById("togglethree").style.display = "none";
 }
+
+let ourServices=0,successCase=0,ourDoctors=0,happyPatient=0;
+const myInterval =setInterval(function () {
+  if(ourDoctors>525)
+  {
+    myStopFunction();
+  }
+  ourServices++;
+  successCase+=2;
+  ourDoctors+=3;
+  happyPatient+=4;
+  document.getElementById("numberourService").textContent=parseInt(ourServices);
+  document.getElementById("numberourSUCCESS").textContent=parseInt(successCase);
+  document.getElementById("numberourDOCTORS").textContent=parseInt(ourDoctors);
+  document.getElementById("numberourPATIENTS").textContent=parseInt(happyPatient);
+}, 30);
+function myStopFunction() {
+  clearInterval(myInterval);
+}
